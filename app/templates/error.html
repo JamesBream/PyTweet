@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unauthorized Access:: Tweeter</title>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster&text=Tweeter' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap Jumbotron template -->
+    <link href="../static/css/jumbotron-narrow.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">Tweeter</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--<div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="/showSignIn">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="/showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">PixelGram</h3>
+        </div>-->
+
+        <div class="jumbotron">
+            <!-- Error value passed in from render -->
+            <h2>{{error}}</h2>
+            <h2><a href="/"><span class="glyphicon glyphicon-home"></span></a></h2>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Tweeter 2017</p>    
+        </footer>
+    </div>
+
+</body>
+
+</html>
